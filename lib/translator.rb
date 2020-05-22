@@ -21,6 +21,8 @@ def get_japanese_emoticon(file_path, emoticon)
   # code goes here
   result=load_library(file_path)
   binding.pry
+  result.each do|emotion, symbols|
+  if result[emotion][:english]==
  
   
 end
