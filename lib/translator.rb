@@ -24,7 +24,10 @@ def get_japanese_emoticon(file_path, emoticon)
   binding.pry
   result.each do|emotion, symbols|
     if symbols[:english]==emoticon
-      jap_
+      jap_symbol=symbols[:japanese]
+    end
+  end 
+  
  
   
 end
