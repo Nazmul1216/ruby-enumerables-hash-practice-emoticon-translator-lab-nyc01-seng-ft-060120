@@ -34,7 +34,13 @@ end
 
 def get_english_meaning(file_path, emoticon)
   # code goes here
-  eng_symbol=
-  result=load_library(file_path)['get_meaning'][emoticon]
-  result ? result : "Sorry, that emoticon was not found"
+  eng_symbol="Sorry, that emoticon was not found"
+  result=load_library(file_path)
+  result.each do|emotion, symbols|
+    if symbols[:japanese]==emoticon
+      eng_symbol=symbols[:english]
+    end 
+  end
+  eng_symbol
+end 
 end
