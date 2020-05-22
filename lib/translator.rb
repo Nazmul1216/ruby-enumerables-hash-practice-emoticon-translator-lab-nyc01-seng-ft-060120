@@ -19,11 +19,12 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   # code goes here
-  jap_symbol=
+  jap_symbol="Sorry, that emoticon was not found"
   result=load_library(file_path)
   binding.pry
   result.each do|emotion, symbols|
     if symbols[:english]==emoticon
+      jap_
  
   
 end
