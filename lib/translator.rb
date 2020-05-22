@@ -9,7 +9,9 @@ def load_library(file_path)
   new_hash = {}
   emoticons.each do |emotion, symbols|
     new_hash[emotion]={
-      :english=>
+      :english=>symbols[0],
+      :japanese=>symbols[1]
+      
     }
 
   end
