@@ -11,18 +11,17 @@ def load_library(file_path)
     new_hash[emotion]={
       :english=>symbols[0],
       :japanese=>symbols[1]
-      
     }
 
   end
-  #binding.pry
   new_hash
 end
 
 def get_japanese_emoticon(file_path, emoticon)
   # code goes here
-  result=load_library(file_path)['get_emoticon'][emoticon]
-  result ? result : "Sorry, that emoticon was not found"
+  result=load_library(file_path)
+  binding.pry
+ 
   
 end
 
