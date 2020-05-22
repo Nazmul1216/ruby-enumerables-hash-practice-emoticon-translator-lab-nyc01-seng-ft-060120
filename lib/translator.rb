@@ -27,7 +27,7 @@ def get_japanese_emoticon(file_path, emoticon)
       jap_symbol=symbols[:japanese]
     end
   end 
-  
+  jap_symbol
  
   
 end
